@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 95e03c47d25e13c4dbd759f0270b2a6b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - editIcon: {fileID: 2800000, guid: 92306060e204bda4586f049cf421001f, type: 3}
+  - moveUpIcon: {fileID: 2800000, guid: eb0f0facdd403c04da41d013b831eea4, type: 3}
+  - moveDownIcon: {fileID: 2800000, guid: 5433eeadc186ce142aae88659097356f, type: 3}
+  - deleteIcon: {fileID: 2800000, guid: 22afb86eab7be60498545b00fd1f3388, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

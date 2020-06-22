@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2174593440066881749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2174593440066881738}
+  - component: {fileID: 2174593440066881739}
+  - component: {fileID: 2174593440066881748}
+  m_Layer: 0
+  m_Name: Wave System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2174593440066881738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174593440066881749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2174593440066881739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174593440066881749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d8ae0100137144e902fd8e0308922b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2174593440066881748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174593440066881749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1f21d2fa8e1224b8b2e9f5a9248b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waves:
+  - waveName: First Step
+    spawnData:
+    - prefab: {fileID: 3431128129965867662, guid: 19535612ac0cdb449adcb28903cdf00d,
+        type: 3}
+      amount: 25
+      spawnPoint: {fileID: 0}
+      interval: 2
+      delay: 0
+  - waveName: Big Boys
+    spawnData:
+    - prefab: {fileID: 3743345490137803158, guid: da11096d2ad146347aab0496e796796f,
+        type: 3}
+      amount: 2
+      spawnPoint: {fileID: 0}
+      interval: 5
+      delay: 0
+  - waveName: Fast & Fury
+    spawnData:
+    - prefab: {fileID: 3431128129965867662, guid: 20d8aea0df68778479534a69bc485793,
+        type: 3}
+      amount: 25
+      spawnPoint: {fileID: 0}
+      interval: 1
+      delay: 0
+  - waveName: Boos and his minions
+    spawnData:
+    - prefab: {fileID: 3743345490137803158, guid: da11096d2ad146347aab0496e796796f,
+        type: 3}
+      amount: 1
+      spawnPoint: {fileID: 0}
+      interval: 0
+      delay: 30
+    - prefab: {fileID: 3431128129965867662, guid: 19535612ac0cdb449adcb28903cdf00d,
+        type: 3}
+      amount: 30
+      spawnPoint: {fileID: 0}
+      interval: 0.7
+      delay: 0
+    - prefab: {fileID: 3431128129965867662, guid: 20d8aea0df68778479534a69bc485793,
+        type: 3}
+      amount: 10
+      spawnPoint: {fileID: 0}
+      interval: 1
+      delay: 10
+  - waveName: Swarm
+    spawnData:
+    - prefab: {fileID: 3431128129965867662, guid: 19535612ac0cdb449adcb28903cdf00d,
+        type: 3}
+      amount: 45
+      spawnPoint: {fileID: 0}
+      interval: 0.5
+      delay: 0
+    - prefab: {fileID: 3431128129965867662, guid: 19535612ac0cdb449adcb28903cdf00d,
+        type: 3}
+      amount: 35
+      spawnPoint: {fileID: 0}
+      interval: 0.5
+      delay: 0
+  - waveName: Even bigger swarm
+    spawnData:
+    - prefab: {fileID: 3743345490137803158, guid: da11096d2ad146347aab0496e796796f,
+        type: 3}
+      amount: 5
+      spawnPoint: {fileID: 0}
+      interval: 10
+      delay: 0
+    - prefab: {fileID: 3431128129965867662, guid: 19535612ac0cdb449adcb28903cdf00d,
+        type: 3}
+      amount: 25
+      spawnPoint: {fileID: 0}
+      interval: 0.8
+      delay: 0
+    - prefab: {fileID: 3431128129965867662, guid: 20d8aea0df68778479534a69bc485793,
+        type: 3}
+      amount: 15
+      spawnPoint: {fileID: 0}
+      interval: 1
+      delay: 40
+  - waveName: New commers
+    spawnData:
+    - prefab: {fileID: 3431128129965867662, guid: be03d3c5a54b64149882bcac9b3f351b,
+        type: 3}
+      amount: 8
+      spawnPoint: {fileID: 0}
+      interval: 2
+      delay: 0
+  - waveName: The end
+    spawnData:
+    - prefab: {fileID: 3431128129965867662, guid: 19535612ac0cdb449adcb28903cdf00d,
+        type: 3}
+      amount: 50
+      spawnPoint: {fileID: 0}
+      interval: 1
+      delay: 20
+    - prefab: {fileID: 3431128129965867662, guid: 20d8aea0df68778479534a69bc485793,
+        type: 3}
+      amount: 30
+      spawnPoint: {fileID: 0}
+      interval: 2
+      delay: 7
+    - prefab: {fileID: 3431128129965867662, guid: be03d3c5a54b64149882bcac9b3f351b,
+        type: 3}
+      amount: 5
+      spawnPoint: {fileID: 0}
+      interval: 7
+      delay: 50
+  currentWaveIndex: {fileID: 11400000, guid: 522e1871fdf1a1b4a9a22f099dba855e, type: 2}
+  nextWaveTime: {fileID: 11400000, guid: 3c1abebd9b8d8034b8dc195f85ea6bfe, type: 2}
+  aliveEnmies: {fileID: 11400000, guid: 30c864d59c4c6894da81bb74ed1546e1, type: 2}
+  autoWaveStart: 0
+  autoWavePooling: 0
+  breakWaves: 5
+  timeBetweenWaves: 10
+  breakTime: 90
+  waitForEnemiesDead: 1
+  waveDuration: 130
+  onNextWaveCountDownStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ef77773620d46a6428c74b2ad73f3cfb, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onWaveRushed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 22dfd58071c07124089833093653081b, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onWaveStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 7ae8988bb305b57479ce7632ffc12f14, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onWaveEnded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: d1f502291cb3f9c4a983ba8c4b650af1, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLastWaveStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 638e6f71e6a7b9142a242b2cc3a00e5d, type: 2}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAllWavesCleared:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0c9117ad59fae3d4a970423f38e29942, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

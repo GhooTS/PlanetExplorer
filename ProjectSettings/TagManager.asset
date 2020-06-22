@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ramp
+  - Enemy
+  - Core
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Enviroment
+  - Player
+  - Ground
+  - Enemy
+  - Projectile
+  - Builiding Place
+  - PostProcess
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 596041607
+    locked: 0
+  - name: Foreground
+    uniqueID: 2656795513
+    locked: 0
+  - name: Entities
+    uniqueID: 541322315
+    locked: 0
+  - name: Range
+    uniqueID: 2658851487
+    locked: 0
+  - name: Projectile
+    uniqueID: 2035180175
+    locked: 0
+  - name: UI
+    uniqueID: 3947747061
+    locked: 0

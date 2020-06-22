@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c97808a2ea8d6246b377bc74fe6a1e0, type: 3}
+  m_Name: Barricade
+  m_EditorClassIdentifier: 
+  name: Barricade
+  type: {fileID: 0}
+  icon: {fileID: -1290855366162983238, guid: b8828e60ed11cd8429723292df44dddc, type: 3}
+  price: 150
+  sellPrice: 0.5

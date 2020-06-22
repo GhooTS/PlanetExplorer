@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb59d0901b924c4285bcbd81e7da4f7, type: 3}
+  m_Name: Sniper Gun Shoot ClipCollection
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: c5ab43eb861ef3c4db4600527c3ec29b, type: 3}
+  - {fileID: 8300000, guid: 257e13bca8b014b498110dea179a52a1, type: 3}
+  - {fileID: 8300000, guid: 65017124e5ceae045b1c5629d69aa8cb, type: 3}
+  - {fileID: 8300000, guid: 2eb1c3d672cbeec45bb20869e0914179, type: 3}

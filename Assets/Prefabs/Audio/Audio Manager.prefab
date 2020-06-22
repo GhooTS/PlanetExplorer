@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7291289258438622088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7291289258438622134}
+  - component: {fileID: 7291289258438622089}
+  - component: {fileID: 7291289258438622135}
+  - component: {fileID: 7252696763886219055}
+  - component: {fileID: 7099965525608138307}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7291289258438622134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291289258438622088}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 338.0591, y: 172.55261, z: -6.9192123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7291289258438622089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291289258438622088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbec256d97ee52e4389516fde581c379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audios:
+  - name: {fileID: 11400000, guid: 5a6e1327c2287e24eaf4c89f38f67158, type: 2}
+    audioMixer: {fileID: 7391610452457880841, guid: b44a99484e4e96c4483fc29b68be1dc1,
+      type: 2}
+    playInterval: 0
+    minPitch: 1
+    maxPitch: 1
+    volume: 1
+    stopWhenSceneChange: 0
+  - name: {fileID: 11400000, guid: 3175a7ff49865194b9dd89ac0fb9bf41, type: 2}
+    audioMixer: {fileID: -7771371594865885282, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0
+    minPitch: 0.9
+    maxPitch: 1
+    volume: 1
+    stopWhenSceneChange: 1
+  - name: {fileID: 11400000, guid: 56a01ff00aa33f44e98d965063268c45, type: 2}
+    audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0.1
+    minPitch: 0.9
+    maxPitch: 1.2
+    volume: 1
+    stopWhenSceneChange: 1
+  - name: {fileID: 11400000, guid: 04a0cc3f477f1604da11df9f286bb068, type: 2}
+    audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0.1
+    minPitch: 0.9
+    maxPitch: 1.2
+    volume: 1
+    stopWhenSceneChange: 1
+  - name: {fileID: 11400000, guid: 089c5996e6ce5bc4693cb4f2c6cbeae1, type: 2}
+    audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0.01
+    minPitch: 0.9
+    maxPitch: 1.2
+    volume: 1
+    stopWhenSceneChange: 1
+  - name: {fileID: 11400000, guid: ac80769d074623a43b20e8426ccbd758, type: 2}
+    audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0.01
+    minPitch: 0.9
+    maxPitch: 1.2
+    volume: 1
+    stopWhenSceneChange: 1
+  - name: {fileID: 11400000, guid: 3ce81de20dd32124b9984168a54d89ca, type: 2}
+    audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0.01
+    minPitch: 0.9
+    maxPitch: 1.1
+    volume: 0.6
+    stopWhenSceneChange: 1
+--- !u!114 &7291289258438622135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291289258438622088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538ac6d1dd57fb649928f8b4c036af47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channelName: {fileID: 11400000, guid: 5a6e1327c2287e24eaf4c89f38f67158, type: 2}
+  clip: {fileID: 8300000, guid: 816b6eab58d24c646a55f35fb63b0f1f, type: 3}
+  loop: 1
+  playOnStart: 1
+  audioTransitionTime: 2
+  transitioCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.06969697
+    - serializedVersion: 3
+      time: 1
+      value: 0.1
+      inSlope: -0.017105017
+      outSlope: -0.017105017
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4136364
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7252696763886219055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291289258438622088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9672362fa7401954da3c6f7b94320540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Events:
+  - {fileID: 11400000, guid: 7cfa1d9adfa107c448583ed90c721857, type: 2}
+  - {fileID: 11400000, guid: 7edf7ec7b052ce240b9bd93e76f863ab, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7291289258438622135}
+        m_MethodName: Play
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 816b6eab58d24c646a55f35fb63b0f1f,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7099965525608138307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291289258438622088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9672362fa7401954da3c6f7b94320540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Events:
+  - {fileID: 11400000, guid: 638e6f71e6a7b9142a242b2cc3a00e5d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7291289258438622135}
+        m_MethodName: Play
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 9113a8a90b5a5ca42a7d9af05d6cf620,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

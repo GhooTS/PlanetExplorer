@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: MainGameChannels
+  m_EditorClassIdentifier: Assembly-CSharp::Channels
+  channels:
+  - name: {fileID: 11400000, guid: 5a6e1327c2287e24eaf4c89f38f67158, type: 2}
+    audioMixer: {fileID: 7391610452457880841, guid: b44a99484e4e96c4483fc29b68be1dc1,
+      type: 2}
+    playInterval: 0
+    minPitch: 1
+    maxPitch: 1
+    volume: 1
+    stopWhenSceneChange: 0
+  - name: {fileID: 11400000, guid: 3175a7ff49865194b9dd89ac0fb9bf41, type: 2}
+    audioMixer: {fileID: -7771371594865885282, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0
+    minPitch: 0.9
+    maxPitch: 1
+    volume: 1
+    stopWhenSceneChange: 1
+  - name: {fileID: 11400000, guid: 56a01ff00aa33f44e98d965063268c45, type: 2}
+    audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0.01
+    minPitch: 0.9
+    maxPitch: 1.2
+    volume: 1
+    stopWhenSceneChange: 1
+  - name: {fileID: 11400000, guid: 56a01ff00aa33f44e98d965063268c45, type: 2}
+    audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
+      type: 2}
+    playInterval: 0.01
+    minPitch: 0.9
+    maxPitch: 1.2
+    volume: 1
+    stopWhenSceneChange: 1

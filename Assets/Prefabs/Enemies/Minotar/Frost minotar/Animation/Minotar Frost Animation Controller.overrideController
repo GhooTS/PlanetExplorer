@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Minotar Frost Animation Controller
+  m_Controller: {fileID: 9100000, guid: e971dbc4f8645a84a91e2eefc6d5a926, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: adf0259c6d0b73245a0b5c7504ff4955, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d3a728b390fedf343a72ca0639428bce, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4cb0559a05ecb604593e14529375ced4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ef6a34efa7245a842a71da8f5d940045, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 01224b384869e024db03cd8d7b83b265, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 07a6398f02a27cb45af9df10abce2d2e, type: 2}
