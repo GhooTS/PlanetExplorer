@@ -1,8 +1,8 @@
-﻿using GTUtility;
-using System;
+﻿using System;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
+using UnityEditor;
+using GTUtility;
 
 namespace GTAttribute.Editor
 {
@@ -26,7 +26,7 @@ namespace GTAttribute.Editor
         {
             Rect optionsRect = RectUtility.SliceVertical(position, buttonsHeight, out position);
 
-            if (typeNames == null)
+            if (typeNames == null) 
             {
                 RefreshTypeList(property);
             }
@@ -34,15 +34,15 @@ namespace GTAttribute.Editor
             //Draw type selection popup
             Rect popupRect = RectUtility.SliceHoriozntal(optionsRect, position.width - 25, out Rect menuPosition);
             selected = EditorGUI.IntPopup(popupRect, selected, typeNames, optionsValue);
-
-            if (GUI.Button(RectUtility.SliceHoriozntal(menuPosition, 5, false), "...", EditorStyles.miniButtonRight)) //TODO: Add icon
+ 
+            if(GUI.Button(RectUtility.SliceHoriozntal(menuPosition,5,false), "...", EditorStyles.miniButtonRight)) //TODO: Add icon
             {
                 var menu = new GenericMenu();
-                menu.AddItem(new GUIContent("Change"), false, OnInjectSelectedTypeSelected, property);
+                menu.AddItem(new GUIContent("Inject"), false, OnInjectSelectedTypeSelected, property);
                 menu.AddItem(new GUIContent("Refresh"), false, OnRefreshTypeListSelected, property);
                 menu.DropDown(menuPosition);
             }
-
+            
             //Draw property field
             EditorGUI.PropertyField(position, property, new GUIContent(property.displayName), true);
         }
@@ -86,7 +86,7 @@ namespace GTAttribute.Editor
             for (int i = 0; i < availableTypes.Length; i++)
             {
                 optionsValue[i] = i;
-                typeNames[i] = availableTypes[i].ToString();
+                typeNames[i] = availableTypes[i].Name;
             }
 
             selected = availableTypes.Length != 0 ? Mathf.Clamp(selected, 0, availableTypes.Length - 1) : -1;

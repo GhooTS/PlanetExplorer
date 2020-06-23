@@ -1,9 +1,10 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+
 namespace GTAttribute.Editor
 {
-    [CustomPropertyDrawer(typeof(GT_DisableGroupEndAttribute))]
+    [CustomPropertyDrawer(typeof(GT_DisableGroupEndDecoratorAttribute))]
     public class GT_DisableGroupEndDecoratorDrawer : DecoratorDrawer
     {
         public override float GetHeight()
@@ -13,17 +14,10 @@ namespace GTAttribute.Editor
 
         public override void OnGUI(Rect position)
         {
-            GT_DisableGroupEndAttribute disable = attribute as GT_DisableGroupEndAttribute;
-            bool enable = GUI.enabled;
+            var enabled = GUI.enabled;
+            var disabledBelow = (attribute as GT_DisableGroupEndDecoratorAttribute).DisableBelowe;
             EditorGUI.EndDisabledGroup();
-            if (disable.DisableUnder)
-            {
-                GUI.enabled = enable;
-            }
-            else
-            {
-                GUI.enabled = true;
-            }
+            GUI.enabled = enabled || !disabledBelow;
         }
     }
 }

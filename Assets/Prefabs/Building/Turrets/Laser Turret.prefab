@@ -5197,7 +5197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretRotator: {fileID: 3273327249396909317}
-  rotationSpeed: 15
+  rotationSpeed: 5
   disableTargetAlignment: 0
   angleRequiareToShoot: 2
   facingDirection: 3

@@ -13,7 +13,7 @@ namespace GTAttribute.Editor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            if (property.propertyType != SerializedPropertyType.String)
+            if(property.propertyType != SerializedPropertyType.String)
             {
                 EditorGUI.HelpBox(position, "tag attribute works only for string type", MessageType.Warning);
                 return;

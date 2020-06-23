@@ -1,5 +1,5 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEditor;
 
 namespace GTAttribute.Editor
 {
@@ -13,6 +13,9 @@ namespace GTAttribute.Editor
                 EditorGUI.HelpBox(position, "Only object reference type supported", MessageType.Error);
                 return;
             }
+
+            
+
             position.xMax -= 22.5f;
             Rect buttonRect = new Rect(position.xMax + 2.5f, position.yMin, 20, position.height);
             EditorGUI.PropertyField(position, property);
@@ -20,7 +23,7 @@ namespace GTAttribute.Editor
 
             if (GUI.Button(buttonRect, "#")) //TODO : some nice icon
             {
-                GTQuickView.Editor.QuickView.Show(property);
+                QuickView.Show(property);
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace GTAttribute
 {
@@ -14,7 +15,7 @@ namespace GTAttribute
 
         }
 
-        public GT_DisableGroupBeginAttribute(string fieldName = null, bool invert = false, string parentFieldName = null, bool parentInvert = false)
+        public GT_DisableGroupBeginAttribute(string fieldName = null, bool invert = false, string parentFieldName = null,bool parentInvert = false)
         {
             FieldName = fieldName;
             Invert = invert;

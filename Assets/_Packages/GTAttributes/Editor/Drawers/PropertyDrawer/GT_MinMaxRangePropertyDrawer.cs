@@ -1,6 +1,6 @@
-﻿using GTUtility;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
+using GTUtility;
 
 namespace GTAttribute.Editor
 {
@@ -25,12 +25,12 @@ namespace GTAttribute.Editor
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             GT_MinMaxRangeAttribute minMaxRangeAttr = attribute as GT_MinMaxRangeAttribute;
-            Rect labelRect = RectUtility.SliceVertical(position, EditorGUIUtility.singleLineHeight, out Rect slidersRect);
+            Rect labelRect = RectUtility.SliceVertical(position,EditorGUIUtility.singleLineHeight, out Rect slidersRect);
             EditorGUI.LabelField(labelRect, minMaxRangeAttr.Name);
             SerializedProperty minSliderProp = property.serializedObject.FindProperty(property.propertyPath);
             if (property.Next(false))
             {
-
+                
                 SerializedProperty maxSliderProp = property;
                 if (string.IsNullOrEmpty(maxSliderControlName))
                 {
@@ -46,21 +46,21 @@ namespace GTAttribute.Editor
 
 
                 Rect minSliderRect = RectUtility.SliceHoriozntal(slidersRect, 10, false); // make 10 pixel indent
-                minSliderRect = RectUtility.SliceVertical(minSliderRect, EditorGUI.GetPropertyHeight(property), out Rect maxSliderRect);
+                minSliderRect = RectUtility.SliceVertical(minSliderRect,EditorGUI.GetPropertyHeight(property), out Rect maxSliderRect);
 
                 EditorGUI.BeginChangeCheck();
                 DrawSlider(minSliderRect, minSliderProp, "Min", minMaxRangeAttr.Min, minMaxRangeAttr.Max);
                 if (EditorGUI.EndChangeCheck())
                 {
-                    ChangeValue(minSliderProp, maxSliderProp, false);
+                    ChangeValue(minSliderProp, maxSliderProp,false);
                 }
 
                 EditorGUI.BeginChangeCheck();
-
+                
                 GUI.SetNextControlName(maxSliderControlName);
                 DrawSlider(maxSliderRect, maxSliderProp, "Max", minMaxRangeAttr.Min, minMaxRangeAttr.Max);
 
-                if ((EditorGUI.EndChangeCheck() && EditorGUIUtility.editingTextField == false)
+                if ((EditorGUI.EndChangeCheck() && EditorGUIUtility.editingTextField == false) 
                                                 || GUI.GetNameOfFocusedControl() != maxSliderControlName)
                 {
                     ChangeValue(minSliderProp, maxSliderProp);
@@ -68,7 +68,7 @@ namespace GTAttribute.Editor
             }
         }
 
-        private void ChangeValue(SerializedProperty firstSlider, SerializedProperty secoundSlider, bool changeFirstSlider = true)
+        private void ChangeValue(SerializedProperty firstSlider, SerializedProperty secoundSlider,bool changeFirstSlider = true)
         {
             switch (firstSlider.propertyType)
             {

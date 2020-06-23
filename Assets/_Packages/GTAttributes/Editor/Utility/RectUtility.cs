@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace GTUtility
 {
     public static class RectUtility
     {
 
-        public static Rect Chop(Rect rect, float left, float right, float top, float bottom)
+        public static Rect Chop(Rect rect,float left,float right,float top,float bottom)
         {
             Rect output = new Rect();
 
@@ -17,12 +18,12 @@ namespace GTUtility
             return output;
         }
 
-        public static Rect Chop(Rect rect, float amount)
+        public static Rect Chop(Rect rect,float amount)
         {
             return Chop(rect, amount, amount, amount, amount);
         }
 
-        public static Rect Chop(Rect rect, float horizontal, float vertical)
+        public static Rect Chop(Rect rect,float horizontal,float vertical)
         {
             return Chop(rect, horizontal, horizontal, vertical, vertical);
         }
@@ -30,7 +31,7 @@ namespace GTUtility
         public static Rect[][] Split(Rect rect, int horizontalSplite, int verticaleSplite, float horizontalSpecing, float verticalSpacing)
         {
             Rect[][] output = new Rect[verticaleSplite][];
-            Rect[] tmp = SplitVertical(rect, verticaleSplite, verticalSpacing);
+            Rect[] tmp = SplitVertical(rect,verticaleSplite, verticalSpacing);
 
             for (int i = 0; i < verticaleSplite; i++)
             {
@@ -57,7 +58,7 @@ namespace GTUtility
             return output;
         }
 
-        public static Rect[] SplitHorizontal(Rect rect, int splite, float spacing, params float[] sizes)
+        public static Rect[] SplitHorizontal(Rect rect, int splite, float spacing,params float[] sizes)
         {
             Rect[] output = new Rect[splite];
 
@@ -66,7 +67,7 @@ namespace GTUtility
             rectWidth += spacing / splite;
             float xPosition = rect.x;
 
-
+            
 
             for (int i = 0; i < output.Length; i++)
             {

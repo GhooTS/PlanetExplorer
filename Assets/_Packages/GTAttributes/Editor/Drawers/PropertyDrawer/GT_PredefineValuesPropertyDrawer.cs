@@ -6,7 +6,7 @@ namespace GTAttribute.Editor
     [CustomPropertyDrawer(typeof(GT_PredefineValueAttribute))]
     public class GT_PredefineValuesPropertyDrawer : PropertyDrawer
     {
-        private int selected;
+        private int selected = -2;
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
@@ -15,14 +15,27 @@ namespace GTAttribute.Editor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-
-            if (property.propertyType != SerializedPropertyType.String)
+            
+            if(property.propertyType != SerializedPropertyType.String)
             {
                 EditorGUI.HelpBox(position, "Predefine values work online for string field", MessageType.Error);
                 return;
             }
 
             GT_PredefineValueAttribute predefineValue = attribute as GT_PredefineValueAttribute;
+
+            if(selected == -2)
+            {
+                var values = predefineValue.Values;
+
+                for (int i = 0; i < values.Length; i++)
+                {
+                    if(values[i].GetHashCode() == property.stringValue.GetHashCode())
+                    {
+                        selected = i;
+                    }
+                }
+            }
 
 
             Rect popupRect = EditorGUI.PrefixLabel(position, label);
@@ -40,7 +53,7 @@ namespace GTAttribute.Editor
             }
             else
             {
-                EditorGUI.LabelField(popupRect, "none value define");
+                EditorGUI.LabelField(popupRect,"none value define");
             }
         }
     }

@@ -15,7 +15,7 @@ namespace GTAttribute.Editor
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             GT_DisableGroupBeginAttribute disableAttr = attribute as GT_DisableGroupBeginAttribute;
-
+            
 
             if (disableAttr.FieldName != null)
             {
@@ -24,9 +24,9 @@ namespace GTAttribute.Editor
 
 
                 //Check if field name is correct, if not display help box
-                if (field == null)
+                if(field == null)
                 {
-                    EditorGUI.HelpBox(position, $"Field with name '{disableAttr.FieldName}' doesn't exist", MessageType.Error);
+                    EditorGUI.HelpBox(position, $"Field with name '{disableAttr.FieldName}' doesn't exist",MessageType.Error);
                     return;
                 }
 
@@ -52,13 +52,13 @@ namespace GTAttribute.Editor
                         EditorGUI.PropertyField(position, property);
                         break;
                     case SerializedPropertyType.ObjectReference:
-                        DrawObjectReferenceControl(position, property, label, enable);
+                        DrawObjectReferenceControl(position, property, label,enable);
                         break;
                     default:
-                        EditorGUI.HelpBox(position, $"Type of '{field.propertyType}' isn't supported", MessageType.Error);
+                        EditorGUI.HelpBox(position, $"Type of '{field.propertyType}' isn't supported",MessageType.Error);
                         break;
                 }
-
+                
                 GUI.enabled = parentEnable ? enable : false;
             }
             else
@@ -84,7 +84,7 @@ namespace GTAttribute.Editor
         }
 
 
-        private void DrawObjectReferenceControl(Rect position, SerializedProperty property, GUIContent label, bool enable)
+        private void DrawObjectReferenceControl(Rect position, SerializedProperty property, GUIContent label,bool enable)
         {
             Color currentBGColor = GUI.backgroundColor;
             if (enable == false)

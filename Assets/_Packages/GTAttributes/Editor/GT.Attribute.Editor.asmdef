@@ -1,16 +1,15 @@
 {
     "name": "GT.Attribute.Editor",
     "references": [
-        "GUID:838b5493fae0fbe419b57e5668575a21",
-        "GUID:a2a2939d05a8d914ba29bb0d357ff437"
+        "GUID:838b5493fae0fbe419b57e5668575a21"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
-    "precompiledReferences": [
-        ""
-    ],
+    "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
