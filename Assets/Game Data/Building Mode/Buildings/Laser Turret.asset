@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Laser Turret
   type: {fileID: 0}
   icon: {fileID: -299690340437171572, guid: b8828e60ed11cd8429723292df44dddc, type: 3}
-  price: 250
+  price: 300
   sellPrice: 0.5

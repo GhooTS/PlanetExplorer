@@ -2200,17 +2200,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7136174009178579298}
-        m_MethodName: SetDefaultTime
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1768326265898834141
 GameObject:
   m_ObjectHideFlags: 0
@@ -7275,6 +7264,7 @@ GameObject:
   - component: {fileID: 7136174009178579289}
   - component: {fileID: 7136174009178579290}
   - component: {fileID: 339441249}
+  - component: {fileID: 68359816}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -7432,7 +7422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerResource: {fileID: 11400000, guid: aff8055540916b945ba2720f3e6efa20, type: 2}
-  startResource: 1000
+  startResource: 650
   waveClearReward: 250
 --- !u!114 &7136174009178579291
 MonoBehaviour:
@@ -7446,9 +7436,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9672362fa7401954da3c6f7b94320540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: stop time on all wave clear
+  name: stop time on game ended
   gameEvents:
-  - {fileID: 11400000, guid: 0c9117ad59fae3d4a970423f38e29942, type: 2}
+  - {fileID: 11400000, guid: 7cfa1d9adfa107c448583ed90c721857, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -7543,6 +7533,35 @@ MonoBehaviour:
       - m_Target: {fileID: 7136174009178579297}
         m_MethodName: EndGame
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &68359816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7136174009178579302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9672362fa7401954da3c6f7b94320540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Reset time on game started
+  gameEvents:
+  - {fileID: 11400000, guid: c525add33d63c8747a6ffb2e303fc75d, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7136174009178579298}
+        m_MethodName: SetDefaultTime
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
