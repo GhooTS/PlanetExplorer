@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 5118154550500492765}
   - component: {fileID: -8600838439772349580}
   - component: {fileID: 5372297569919264159}
-  m_Layer: 12
+  - component: {fileID: -5625325963319187537}
+  m_Layer: 11
   m_Name: Minotar Frost
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -128,10 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518f6080fbbe0a6468fc9e857df18346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundDistance: 0.66
+  groundDistance: 0.7
   standOn:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1024
 --- !u!114 &3431128129965867656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
-  playerDetector: {fileID: 0}
+  playerDetector: {fileID: -5625325963319187537}
   onAttack:
     m_PersistentCalls:
       m_Calls:
@@ -301,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c6fed5ca67ab84db32b444a4c503f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerResource: {fileID: 0}
+  playerResource: {fileID: 11400000, guid: aff8055540916b945ba2720f3e6efa20, type: 2}
   reward: 15
 --- !u!114 &-8600838439772349580
 MonoBehaviour:
@@ -328,6 +329,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   channelName: {fileID: 11400000, guid: ac80769d074623a43b20e8426ccbd758, type: 2}
+--- !u!114 &-5625325963319187537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3431128129965867662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52643e6a33237cf43a088190d26b51a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensorTransform: {fileID: 3431128129965867652}
+  detectionLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  maxDetectedObjects: 16
+  filterByVisibility: 0
+  visabilityChecker:
+    obstractionLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    visabilityStartPoint: {fileID: 0}
+  filterByTag: 0
+  tagFilter:
+    tag: 
+  filterByArc: 0
+  arcFilter:
+    startArc: 0
+    arcSize: 360
+    flipX: 0
+    flipY: 0
+    offsetByZRotation: 1
+    offsetTransform: {fileID: 0}
+  distanceFilter:
+    minRange: 0
+    maxRange: 1.2
 --- !u!1 &3623000575556470985
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +377,7 @@ GameObject:
   - component: {fileID: 3372255773823674677}
   - component: {fileID: 7716178356287439102}
   - component: {fileID: 8490188298333222472}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: BloodSplash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5094,7 +5132,7 @@ GameObject:
   - component: {fileID: 4419409721923936878}
   - component: {fileID: 878338414170257918}
   - component: {fileID: 5427399775390832641}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SubEmitter0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9849,6 +9887,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Health Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 2489001323335925421, guid: e2ffb3174fe6ab44fb888f9ae5398f93,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2489001323335925426, guid: e2ffb3174fe6ab44fb888f9ae5398f93,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9959,6 +10002,16 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 3431128129965867653}
+    - target: {fileID: 2489001323395453368, guid: e2ffb3174fe6ab44fb888f9ae5398f93,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489001323621022637, guid: e2ffb3174fe6ab44fb888f9ae5398f93,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ffb3174fe6ab44fb888f9ae5398f93, type: 3}
 --- !u!224 &8991916439801888498 stripped
