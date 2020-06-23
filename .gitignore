@@ -62,3 +62,7 @@ crashlytics-build.properties
 /_Asset Store
 *_Asset Store.meta
 
+#ignore external sources
+/_external sources
+*_external sources.meta
+
