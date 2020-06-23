@@ -1924,8 +1924,8 @@ MonoBehaviour:
   waves:
   - waveName: Wave 1
     spawnDatas:
-    - name: Spawn 1 Minotar every 1 s with 0 s delay from Spawn Point
-      prefab: {fileID: 3431128129965867662, guid: 19535612ac0cdb449adcb28903cdf00d,
+    - name: Spawn 1 Minotar Elite every 1 s with 0 s delay from Spawn Point
+      prefab: {fileID: 3743345490137803158, guid: da11096d2ad146347aab0496e796796f,
         type: 3}
       spawnPoint: {fileID: 903458336}
       amount: 1
