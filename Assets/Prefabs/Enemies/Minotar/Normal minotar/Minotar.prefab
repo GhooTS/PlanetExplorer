@@ -364,7 +364,7 @@ MonoBehaviour:
     offsetTransform: {fileID: 3431128129965867652}
   distanceFilter:
     minRange: 0
-    maxRange: 1.2
+    maxRange: 1.7
 --- !u!1001 &1742626979199411967
 PrefabInstance:
   m_ObjectHideFlags: 0
