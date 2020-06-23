@@ -66,7 +66,7 @@ MonoBehaviour:
   - name: {fileID: 11400000, guid: 56a01ff00aa33f44e98d965063268c45, type: 2}
     audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
       type: 2}
-    playInterval: 0.1
+    playInterval: 0.2
     minPitch: 0.9
     maxPitch: 1.2
     volume: 1
@@ -74,7 +74,7 @@ MonoBehaviour:
   - name: {fileID: 11400000, guid: 04a0cc3f477f1604da11df9f286bb068, type: 2}
     audioMixer: {fileID: -7039503570836634586, guid: 8f667212ce365ba408d38613d7cbecf3,
       type: 2}
-    playInterval: 0.1
+    playInterval: 0.2
     minPitch: 0.9
     maxPitch: 1.2
     volume: 1
@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9672362fa7401954da3c6f7b94320540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Events:
-  - {fileID: 11400000, guid: 7cfa1d9adfa107c448583ed90c721857, type: 2}
+  name: Play menu music
+  gameEvents:
   - {fileID: 11400000, guid: 7edf7ec7b052ce240b9bd93e76f863ab, type: 2}
   Response:
     m_PersistentCalls:
@@ -186,8 +186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9672362fa7401954da3c6f7b94320540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Events:
-  - {fileID: 11400000, guid: 638e6f71e6a7b9142a242b2cc3a00e5d, type: 2}
+  name: Play level music
+  gameEvents:
+  - {fileID: 11400000, guid: c525add33d63c8747a6ffb2e303fc75d, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
