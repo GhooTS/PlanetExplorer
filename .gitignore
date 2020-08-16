@@ -66,3 +66,7 @@ crashlytics-build.properties
 /_external sources
 *_external sources.meta
 
+#FMOD
+*.cache
+*.unsave
+
