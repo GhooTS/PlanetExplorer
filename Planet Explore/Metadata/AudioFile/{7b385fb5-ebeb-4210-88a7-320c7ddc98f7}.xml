@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{7b385fb5-ebeb-4210-88a7-320c7ddc98f7}">
+		<property name="assetPath">
+			<value>Epic_Arsenal_Essential_Elements_Demo_Packs/Digital_Elements_Free/Futuristic_Alien_Game_Item_Pick_Up.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.62501133786848073</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54dab4fe-8769-447b-a11c-061007273b19}</destination>
+		</relationship>
+	</object>
+</objects>

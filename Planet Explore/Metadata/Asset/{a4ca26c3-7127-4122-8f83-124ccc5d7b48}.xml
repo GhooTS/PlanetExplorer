@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{a4ca26c3-7127-4122-8f83-124ccc5d7b48}">
+		<property name="assetPath">
+			<value>Epic_Arsenal_Essential_Elements_Demo_Packs/Household_Source_Free/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54dab4fe-8769-447b-a11c-061007273b19}</destination>
+		</relationship>
+	</object>
+</objects>

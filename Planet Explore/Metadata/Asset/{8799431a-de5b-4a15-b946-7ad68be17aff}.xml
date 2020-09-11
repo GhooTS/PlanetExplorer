@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{8799431a-de5b-4a15-b946-7ad68be17aff}">
+		<property name="assetPath">
+			<value>Epic_Arsenal_Essential_Elements_Demo_Packs/Cybernetic_Weapons_Free/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54dab4fe-8769-447b-a11c-061007273b19}</destination>
+		</relationship>
+	</object>
+</objects>

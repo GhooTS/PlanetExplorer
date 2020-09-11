@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{3071420f-35a2-4590-a645-7730a12ee6a1}">
+		<property name="assetPath">
+			<value>Epic_Arsenal_Essential_Elements_Demo_Packs/Modulated_Movement_Free/Mechanical_Machine_Airy_Whoosh_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.87501133786848073</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54dab4fe-8769-447b-a11c-061007273b19}</destination>
+		</relationship>
+	</object>
+</objects>

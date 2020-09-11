@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{cde03f66-ae3c-4b32-8aa7-1357d0d9a2f7}">
+		<property name="assetPath">
+			<value>Epic_Arsenal_Essential_Elements_Demo_Packs/Phantom_magic_Free/Magic_Game_Positive_Item_Touch.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7624479166666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54dab4fe-8769-447b-a11c-061007273b19}</destination>
+		</relationship>
+	</object>
+</objects>

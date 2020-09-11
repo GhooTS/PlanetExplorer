@@ -20,8 +20,8 @@ GameObject:
   - component: {fileID: 4892173444704651723}
   - component: {fileID: 8571418695123903067}
   - component: {fileID: 807149568443852237}
-  - component: {fileID: 3409746791082687953}
   - component: {fileID: 4031536253443628788}
+  - component: {fileID: -6869510639134121613}
   m_Layer: 11
   m_Name: Minotar Elite
   m_TagString: Enemy
@@ -260,16 +260,15 @@ MonoBehaviour:
   onAttack:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3409746791082687953}
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: -6869510639134121613}
+        m_MethodName: PlaySound
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 58748f782368640aa8b64609a22ea9ba,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: event:/Minotar Swing
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &4892173444704651723
@@ -316,19 +315,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50ed66058f08214db5fa8b744a13ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3409746791082687953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3743345490137803158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fafa0bcdd6b80204b90ba421b1c87a12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  channelName: {fileID: 11400000, guid: 089c5996e6ce5bc4693cb4f2c6cbeae1, type: 2}
 --- !u!114 &4031536253443628788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +352,18 @@ MonoBehaviour:
   distanceFilter:
     minRange: 0
     maxRange: 2
+--- !u!114 &-6869510639134121613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3743345490137803158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7943d5fd3ce3b54da22e66ad770f901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5916638571769429378
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,8 +20,8 @@ GameObject:
   - component: {fileID: 4010871012045802973}
   - component: {fileID: 5118154550500492765}
   - component: {fileID: -8600838439772349580}
-  - component: {fileID: 5372297569919264159}
   - component: {fileID: -5625325963319187537}
+  - component: {fileID: -2606499001482538505}
   m_Layer: 11
   m_Name: Minotar Frost
   m_TagString: Enemy
@@ -278,16 +278,15 @@ MonoBehaviour:
   onAttack:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5372297569919264159}
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: -2606499001482538505}
+        m_MethodName: PlaySound
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 58748f782368640aa8b64609a22ea9ba,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: event:/Minotar Swing
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &5118154550500492765
@@ -316,19 +315,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50ed66058f08214db5fa8b744a13ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5372297569919264159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3431128129965867662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fafa0bcdd6b80204b90ba421b1c87a12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  channelName: {fileID: 11400000, guid: ac80769d074623a43b20e8426ccbd758, type: 2}
 --- !u!114 &-5625325963319187537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +352,18 @@ MonoBehaviour:
   distanceFilter:
     minRange: 0
     maxRange: 2.1
+--- !u!114 &-2606499001482538505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3431128129965867662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7943d5fd3ce3b54da22e66ad770f901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3623000575556470985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1225,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -1335,8 +1333,66 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    m_BurstCount: 0
-    m_Bursts: []
+    m_BurstCount: 1
+    m_Bursts:
+    - serializedVersion: 2
+      time: 0
+      countCurve:
+        serializedVersion: 2
+        minMaxState: 0
+        scalar: 30
+        minScalar: 30
+        maxCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+      cycleCount: 1
+      repeatInterval: 0.01
+      probability: 1
   SizeModule:
     enabled: 0
     curve:
@@ -5076,7 +5132,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6dbe4ccf7022f804590b9d0551ded30e, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 
-
-
 public class AudioVolumeController : MonoBehaviour
 {
     [Range(-80, 20)]

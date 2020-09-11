@@ -18,9 +18,9 @@ MonoBehaviour:
   sourceProjectPath: Planet Explore/Planet Explore.fspro
   sourceBankPath: Planet Explore\Build
   SourceBankPathUnformatted: 
-  AutomaticEventLoading: 1
+  AutomaticEventLoading: 0
   BankLoadType: 0
-  AutomaticSampleLoading: 0
+  AutomaticSampleLoading: 1
   EncryptionKey: 
   ImportType: 0
   TargetAssetPath: FMODBanks
@@ -41,7 +41,7 @@ MonoBehaviour:
   - Platform: 1
     Value: 1
   - Platform: 2
-    Value: 0
+    Value: 2
   - Platform: 20
     Value: 0
   OverlaySettings:
@@ -58,7 +58,9 @@ MonoBehaviour:
     Value: 0
   - Platform: 20
     Value: 0
-  BankDirectorySettings: []
+  BankDirectorySettings:
+  - Platform: 2
+    Value: Desktop
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
@@ -77,5 +79,6 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks: []
-  BanksToLoad: []
+  BanksToLoad:
+  - Master.bank
   LiveUpdatePort: 9264
