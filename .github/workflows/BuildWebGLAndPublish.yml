@@ -29,25 +29,24 @@ jobs:
       - name: Run tests
         uses: webbertakken/unity-test-runner@v1.3
         with:
-          unityVersion: 2019.3.0f6
+          unityVersion: 2019.4.8f1
 
       # Build
       - name: Build project
         uses: webbertakken/unity-builder@v0.10
         with:
-          unityVersion: 2019.3.0f6
-          targetPlatform: WebGL
-          versioning: Semantic
+          unityVersion: 2019.4.8f1
+          targetPlatform: StandaloneWindows64
           
       #Deploy
-      - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_BRANCH: master # The branch the action should deploy from.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build/WebGL # The folder the action should deploy.
-          SINGLE_COMMIT: true
+#      - name: Deploy to Github Pages
+#        uses: JamesIves/github-pages-deploy-action@releases/v3
+#        with:
+#          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          BASE_BRANCH: master # The branch the action should deploy from.
+#          BRANCH: gh-pages # The branch the action should deploy to.
+#          FOLDER: build/WebGL # The folder the action should deploy.
+#          SINGLE_COMMIT: true
       
       # Output 
       - uses: actions/upload-artifact@v1
